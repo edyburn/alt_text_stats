@@ -18,6 +18,11 @@ A script for scraping URLs and analyzing img tags for common text description im
 * `longdesc` attribute exactly matches the `href` attribute of the `<a>` that contains the image
 The script outputs data for each image and aggregated by URL as two files.
 
+Requirements
+------------
+* [requests](http://pypi.python.org/pypi/requests)
+* [html5lib](http://pypi.python.org/pypi/html5lib)
+
 Variables
 ---------
 The `URL_FILE` variable is the path a CSV file containing the URLs to scrape in the second column. The script will only scrape the first 200 URLs. The `OUTPUT_AGGREGATE_FILE` variable is the path to save the aggregate results as a tab-delimited file. The `OUTPUT_DETAIL_FILE` variable is the path to save the detailed results (data for each image) as a tab-delimited file.
